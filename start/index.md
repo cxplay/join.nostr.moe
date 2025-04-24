@@ -169,7 +169,7 @@ Nostr 有非常非常多的客户端, 这里将从最基础的社交媒体客户
 
 打开 Nostr.moe 社区客户端: <https://nostr.moe/>
 
-![](./.assets/index/2025-04-04_163924.webp)
+![Nostr.moe](./.assets/index/2025-04-04_163924.webp)
 
 点击左下角的 "登录" 按钮, 弹出登录弹窗, 选择 "浏览器插件登录":
 
