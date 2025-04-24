@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "markdown-it-ruby": "^1.1.2",
+    "vitepress": "^1.6.3"
+  },
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  }
+}

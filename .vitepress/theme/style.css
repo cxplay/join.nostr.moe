@@ -1,0 +1,64 @@
+body {
+  --vp-font-family-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Mono", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Consolas", "Courier New", monospace;
+  --vp-font-family-base: "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --serif-font: "Noto Serif SC", serif, ui-serif, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Droid Sans, BlinkMacSystemFont, segoe ui, Arial;
+}
+
+ruby {
+  font-family:  var(--serif-font);
+  font-weight: bold;
+  font-style: normal;
+  font-size: large;
+}
+ruby > rt {
+  font-size: calc(0.5em);
+}
+
+html.windows .content div:not([class])>p,
+html.windows .content .custom-block {
+  text-shadow: 0 0 #3c3c43b5;
+}
+
+.VPHomeHero .name.clip {
+  color: #FF5F71;
+  -webkit-text-fill-color: #FF5F71;
+  font-weight: 900;
+}
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #ff329e 30%,
+    #ffb8b8
+  );
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #ff329e 50%,
+    #ffb8b8  50%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+.VPHero .VPImage {
+  filter: drop-shadow(-2px 4px 6px rgba(0, 0, 0, 0.2));
+  padding: 18px;
+}
+
+/* used in reference/default-theme-search */
+img[src='/search.png'] {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
