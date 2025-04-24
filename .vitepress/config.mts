@@ -4,7 +4,7 @@ import markdownItRuby from 'markdown-it-ruby'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Nostr!moe - 消息视图主导的社区",
-  description: "Nostr 中文社区",
+  description: "社区指南和文档中心",
   lang: "zh-Hans",
   lastUpdated: true,
   metaChunk: true,
@@ -12,6 +12,27 @@ export default defineConfig({
   head: [
     ['link',
       { rel: 'icon', href: '/favicon.ico', sizes: '32x32' }
+    ],
+    ['link',
+      { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }
+    ],
+    ['link',
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
+    ],
+    ['link',
+      { rel: 'manifest', href: '/manifest.webmanifest' }
+    ],
+    ['meta',
+      { property: 'og:locale', content: "zh_CN" }
+    ],
+    ['meta',
+      { property: 'og:image', content: "https://join.nostr.moe/logo-white-256.webp" }
+    ],
+    ['meta',
+      { name: 'twitter:card', content: "summary" }
+    ],
+    ['meta',
+      { name: 'twitter:image', content: "https://join.nostr.moe/logo-white-256.webp" }
     ],
     [
       'link',
