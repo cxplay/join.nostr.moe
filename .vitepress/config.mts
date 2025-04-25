@@ -1,5 +1,6 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
 import markdownItRuby from 'markdown-it-ruby'
+import markdownItFootnote from 'markdown-it-footnote'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -64,7 +65,8 @@ export default defineConfig({
     },
     config: (md) => {
       // 使用更多的 Markdown-it 插件！
-      md.use(markdownItRuby)
+      md.use(markdownItRuby),
+      md.use(markdownItFootnote)
     }
   },
   sitemap: {
@@ -89,6 +91,12 @@ export default defineConfig({
         items: [
           { text: '快速加入 Nostr 网络', link: '/start/' },
           { text: '申请加入 Nostr!moe 社区', link: '/start/apply/' }
+        ]
+      },
+      {
+        text: '理论概念',
+        items: [
+          { text: '为什么是 Nostr?', link: '/start/why-nostr/' }
         ]
       }
     ],
@@ -115,7 +123,8 @@ export default defineConfig({
       next: '下一页'
     },
     outline: {
-      label: '页面导航'
+      label: '页面导航',
+      level: 'deep'
     },
     lastUpdated: {
       text: '最后更新于'

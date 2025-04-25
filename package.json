@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "markdown-it-footnote": "^4.0.0",
     "markdown-it-ruby": "^1.1.2",
     "vitepress": "^1.6.3"
   },

@@ -4,19 +4,29 @@ body {
   --serif-font: "Noto Serif SC", serif, ui-serif, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Droid Sans, BlinkMacSystemFont, segoe ui, Arial;
 }
 
-ruby {
-  font-family:  var(--serif-font);
+ruby,
+em {
+  font-family: var(--serif-font);
   font-weight: bold;
   font-style: normal;
-  font-size: large;
+  font-size: 1.1em;
 }
-ruby > rt {
+
+ruby>rt {
   font-size: calc(0.5em);
 }
 
-html.windows .content div:not([class])>p,
-html.windows .content .custom-block {
-  text-shadow: 0 0 #3c3c43b5;
+.footnotes-sep {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+
+  html.windows .content div:not([class])>p,
+  html.windows .content .custom-block {
+    text-shadow: 0 0 #3c3c43b5;
+  }
+
 }
 
 .VPHomeHero .name.clip {
@@ -27,16 +37,12 @@ html.windows .content .custom-block {
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #ff329e 30%,
-    #ffb8b8
-  );
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    #ff329e 50%,
-    #ffb8b8  50%
-  );
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+      #ff329e 30%,
+      #ffb8b8);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg,
+      #ff329e 50%,
+      #ffb8b8 50%);
   --vp-home-hero-image-filter: blur(44px);
 }
 
