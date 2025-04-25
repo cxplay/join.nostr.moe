@@ -1,5 +1,5 @@
 ---
-description: 给 Nostr 新手的 Nostr 网络优势与劣势阐述.
+description: Fediverse, Bluesky 和 Nostr 理论问题阐述.
 editLink: true
 layout: doc
 navbar: true
