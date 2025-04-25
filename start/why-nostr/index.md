@@ -51,7 +51,7 @@ aside: true
 3. Pleroma
 4. ...
 
-它们都是「Fediverse」的核心协议 ActivityPub 的实现, 但现实情况是什么? 是 Mastodon 事实上主导了 Fediverse 的用户生态, 它成了事实上的 ActivityPub 的「标准」, 其他的协议实现必须要首先考虑与 Mastodon 进行兼容, 否则就会与这个社交网络里面最多的用户群体发生脱离的危险. 然而它的开发进度**极度**地迟缓, 因为它带有承重的历史包袱, 加上与开发无关的周边事务让 *Mastodon GmbH* 的开发更加迟缓, GitHub 源代码仓库已经堆积了 159 页超过 4000 个未被解决的议题.
+它们都是「Fediverse」的核心协议 ActivityPub 的实现, 但现实情况是什么? 是 Mastodon 事实上主导了 Fediverse 的用户生态, 它成了事实上的 ActivityPub 的「标准」, 其他的协议实现必须要首先考虑与 Mastodon 进行兼容, 否则就会与这个社交网络里面最多的用户群体发生脱离的危险. 然而它的开发进度**极度**地迟缓, 因为它带有沉重的历史包袱, 加上与开发无关的周边事务让 *Mastodon GmbH* 的开发更加迟缓, GitHub 源代码仓库已经堆积了 159 页超过 4000 个未被解决的议题.
 
 它们有公认的最大的来自左翼的资金资助以及社会声望, 开发进度却是所有中最慢的那一批. 一个{引用|Quote}消息的功能从它发布到现在都没有实现, 大多数 Mastodon 忠实用户和被捆绑在一起积重难返的实例管理员对这个问题只能解释为 Mastodon 对 Twitter 的「重新思考」而带来的 "保护原始消息发布者".
 
@@ -172,7 +172,7 @@ AOSP 项目的分支 GrapheneOS:
 
 以上只是最为典型的开发者和项目, 而 *Alex Gleason* 已经将自己的项目完全改造并投入到 Nostr 中的开发了, 更多的长期支持的开发者可以在这里看到:
 
-> [Long-Term Support For Jason Donenfeld](https://opensats.org/tags/lts)
+> [lts - OpenSats](https://opensats.org/tags/lts)
 
 > [Project Showcase - OpenSats](https://opensats.org/projects/showcase)
 
@@ -186,7 +186,7 @@ AOSP 项目的分支 GrapheneOS:
 
 > <https://nostr.moe/?r=wss://relay.stream/&r=wss://news-zh-node2.relay.stream/>
 
-### KISS 协议设计
+### KISS 协议设计 {#kiss-in-nostr}
 
 Nostr 只有一个标准议定是{强制性|Mandatory}的, 也就是 "NIP-01: 基础协议流描述":
 
@@ -260,6 +260,6 @@ $ websocat wss://relay.nostr.moe
 
 但其实, 如果是向往黄金年代 Twitter 的开放式中心化社交网络而不是别人强加的「自由」和「开源」营销的人, 其实我更推荐去 Bluesky, 因为它就是 Twitter 精神的继任者, 并且还带来了去中心化的可能.
 
-## 注释
+## 注释 {#footnote}
 
 [^1]: [Decentralized identifier - Wikipedia](https://en.wikipedia.org/wiki/Decentralized_identifier)
