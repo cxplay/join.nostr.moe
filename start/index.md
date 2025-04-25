@@ -9,7 +9,7 @@ aside: true
 
 # 快速加入 Nostr {#quick-join-nostr}
 
-## 前言
+## 前言 {#introduction}
 
 如果你还不知道什么是 Nostr, 或者你已经使用过了 Fediverse 相关应用, 那么可以尝试阅读以下文章深入了解这两者的区别和优缺点:
 
@@ -26,7 +26,7 @@ aside: true
 
 本指南均在桌面环境下进行指导.
 
-## 创建密钥对 (账户)
+## 创建密钥对 (账户) {#create-keypair}
 
 在 Nostr 中, "账户" 的概念已经被为公钥和私钥取代, 如果你使用过 GPG, 那么就不难理解其背后的用意, Nostr 就是使用密钥对进行签署和加密的通讯协议, 不过 Nostr 使用的算法是比特币在内的加密货币使用的算法 secp256k1. 如果你没有接触过非对称加密, 类比一下既是: 公钥等于唯一账户名, 私钥等于账户密码, 而这里的账户名和密码永远唯一且无法被修改.
 
@@ -50,7 +50,7 @@ aside: true
 
 保存完毕后关闭隐私标签页, 用剪贴板传递 nsec 之后注意清空剪贴板记录.
 
-## 安装密钥管理器
+## 安装密钥管理器 {#install-key-manager}
 
 1. **Chrome 或类 Chromium:** [nos2x - Chrome 应用商店](https://chromewebstore.google.com/detail/nos2x/kpgefcfmnafjgpblomihpgmejjdanjjp)
 2. **Firefox**: [nos2x-fox – Get this Extension for 🦊 Firefox \(en-US\)](https://addons.mozilla.org/en-US/firefox/addon/nos2x-fox/)
@@ -85,7 +85,7 @@ aside: true
 
 此后需要记住, 永远不要将私钥包括包装后的私钥交给你无法完全确认风险的地方, 永远优先使用可信的密钥管理器来管理密钥.
 
-## 创建用户资料
+## 创建用户资料 {#create-profile}
 
 密钥对如果没有任何事件与之关联则没有任何价值, 所以现在需要为这对密钥创建一个 Nostr 网络中的用户资料.
 
@@ -133,7 +133,7 @@ aside: true
 
 注意, 此时这份用户资料仅仅只是签署了之后保存在了网站缓存里面, 还没有真正传递到 Nostr 网络上, 请继续完成下面的中继配置设置.
 
-## 配置中继
+## 配置中继 {#configure-relay}
 
 同样是 metadata.nostr.com, 签署你的用户资料后能够预览到一部分资料.
 
@@ -163,7 +163,7 @@ aside: true
 
 此时建议重复上一节的用户资料操作, 再一次完善你的用户资料后发布到这些你设置的中继中, 接下来开始正式进入 Nostr 网络了.
 
-## 使用客户端
+## 使用客户端 {#use-client}
 
 Nostr 有非常非常多的客户端, 这里将从最基础的社交媒体客户端开始.
 
@@ -189,7 +189,7 @@ Nostr 有非常非常多的客户端, 这里将从最基础的社交媒体客户
 
 ![查看自己的用户资料](./.assets/index/2025-04-04_164710.webp)
 
-## 发布帖子
+## 发布帖子 {#send-post}
 
 还是在 Nostr.moe 社区, 点击左侧边栏的 "发布笔记" 开始编辑你的第一条正式帖子:
 
@@ -219,7 +219,7 @@ Nostr 有非常非常多的客户端, 这里将从最基础的社交媒体客户
 
 笔记出现在了你的资料中, 说明笔记成功发布出去了, 笔记右下角的计数器就表示在哪些中继(服务器)中找到了你的笔记.
 
-## 尽情探索
+## 尽情探索 {#explore}
 
 欢迎加入 Nostr! 不管你是否打算在此停留多久.
 
