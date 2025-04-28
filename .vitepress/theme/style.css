@@ -68,3 +68,48 @@ img[src='/search.png'] {
   width: 100%;
   aspect-ratio: 1 / 1;
 }
+
+.vp-doc table {
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.vp-doc table:hover {
+  overflow: auto;
+}
+
+.vp-doc table td,
+.vp-doc table th {
+  max-width: 820px;
+  overflow: hidden;
+}
+
+.vp-doc table td:hover,
+.vp-doc table th:hover {
+  overflow: auto;
+}
+
+.vp-doc [class*='language-'] pre {
+  overflow: hidden;
+  max-height: 60vh;
+}
+
+.vp-doc [class*='language-'] pre:hover {
+  overflow: auto;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .vp-doc table {
+    overflow: auto;
+  }
+
+  .vp-doc table td,
+  .vp-doc table th {
+    overflow: auto;
+  }
+
+  .vp-doc [class*='language-'] pre {
+    overflow: auto;
+  }
+}
