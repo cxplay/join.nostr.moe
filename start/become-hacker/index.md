@@ -126,14 +126,11 @@ OPTIONS:
 xxxxx
 ```
 
-`nak key generate` 命令是直接生成一个十六进制的裸私钥, 得到它之后, 我们还需要保存的私钥形式除此之外还有两种:
-
-1. nsec 编码后的私钥.
-2. ncryptsec 编码后的加密私钥.
+`nak key generate` 命令是直接生成一个十六进制的裸私钥, 得到它之后, 我们还需要继续保存编码和加密后的两种私钥以供未来使用.
 
 ### nsec {#nsec-private-key}
 
-继续使用 nak 的 encode 命令继续操作操作:
+使用 nak 的 encode 命令继续操作:
 
 ```bash:no-line-numbers
 ❯ ./nak encode --help
@@ -195,7 +192,7 @@ GLOBAL OPTIONS:
    --version      prints the version (default: false)
 ```
 
-使用密码 `1234` 加密十六进制私钥为 ncryptsec:
+使用密码 `1234` 加密**十六进制私钥**为 ncryptsec:
 
 ```bash:no-line-numbers
 ❯ ./nak key encrypt xxxxx 1234
@@ -235,7 +232,7 @@ type the password to decrypt your secret key:
 
 Nostr 的公钥从私钥中产生, 这个过程也称为「{派生|Derivation}」, 描述了私钥对于公钥的关系.
 
-上文我们得到了各种形式的私钥, 现在我们需要需要使用私钥来派生公钥, 然后继续将公钥编码成各种形式. 本节涉及到的公钥形式有:
+上文我们得到了各种形式的私钥, 现在我们需要使用私钥来派生公钥, 然后继续将公钥编码成各种形式. 本节涉及到的公钥形式有:
 
 1. **十六进制公钥**: 便于机器识别和相对利于传递的公钥形式.
 2. **npub 公钥**:  便于人类识别的公钥形式, 带有固定的 `npub1` 前缀.
@@ -247,7 +244,7 @@ Nostr 的公钥从私钥中产生, 这个过程也称为「{派生|Derivation}�
 
 ### 十六进制 {#hex-public-key}
 
-通常来说, 十六进制的公钥是很不常用的, 因为私钥签署的每一个事件都会包含 pubkey 字段, 其中就是私钥派生的公钥. 不过为了以防不时之需, 我们还是能直接用私钥生成公钥.
+通常来说, 十六进制的公钥是很不常用的, 因为私钥签署的每一个事件都会包含 pubkey 字段, 其中就是私钥派生的公钥. 不过为了以防不时之需, 我们还是能直接用私钥生成十六进制公钥.
 
 使用 nak 从 ncryptsec 私钥派生十六进制公钥:
 
