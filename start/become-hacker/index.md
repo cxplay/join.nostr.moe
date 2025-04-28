@@ -7,7 +7,7 @@ sidebar: true
 aside: true
 ---
 
-# 高级密钥生成指南
+# 高级密钥生成指南 {#advanced-key-generation-guide}
 
 密钥对的生成是加入 Nostr 网络的第一步, 快速加入指南提供的方法足以应对大部分情况. 但如果你认为使用隐私模式下的网页工具并不够安全, 或者不够专业, 不够「黑客」. 那么本篇将指导你使用其他方式生成密钥, 本篇将涉及 NIP-19 议定和 NIP-49 议定.
 
@@ -19,7 +19,7 @@ aside: true
 本文将在 Debian 12 (x86) 操作系统和 Bash 环境下演示.
 :::
 
-## 安装命令行工具
+## 安装命令行工具 {#install-cli-tool}
 
 使用 Nostr 调试工具 nak 可以在任何现代计算机系统中以命令行模式操作密钥.
 
@@ -88,7 +88,7 @@ GLOBAL OPTIONS:
 nak 本身的运行不需要任何网络, 密钥操作也不需要网络, 你可以以任何喜欢的方式安装到你的操作系统中.
 :::
 
-## 私钥操作
+## 私钥操作 {#private-key-operation}
 
 Nostr 私钥有三种形式:
 
@@ -96,7 +96,7 @@ Nostr 私钥有三种形式:
 2. **nsec 私钥**: 带有固定的 `nsec1` 起始字符, 便于人类识别的私钥形式.
 3. **ncryptsec 私钥**: 带有固定前缀 `ncryptsec1` 的对称加密版本私钥, 用于在普通安全环境下传递私钥.
 
-### 十六进制
+### 十六进制 {#hex-private-key}
 
 使用 nak 查看 key 命令的帮助手册:
 
@@ -131,7 +131,7 @@ xxxxx
 1. nsec 编码后的私钥.
 2. ncryptsec 编码后的加密私钥.
 
-### nsec
+### nsec {#nsec-private-key}
 
 继续使用 nak 的 encode 命令继续操作操作:
 
@@ -170,7 +170,7 @@ OPTIONS:
 nsec1xxxxx
 ```
 
-### ncryptsec
+### ncryptsec {#ncryptsec-private-key}
 
 而私钥的 ncryptsec 加密则是 nak key 的一个操作选项:
 
@@ -202,7 +202,7 @@ GLOBAL OPTIONS:
 ncryptsec1xxxxx
 ```
 
-### 直接生成 ncryptsec
+### 直接生成 ncryptsec {#generate-ncryptsec-directly}
 
 如果不想让各种形式的私钥重复暴露, 可以一步到位生成 ncryptsec, 日后有需要用到十六进制和 nsec 私钥的地方才进行解码.
 
@@ -231,7 +231,7 @@ type the password to decrypt your secret key:
 
 同样的, nak 也会提示你输入密码, 也可以直接传入密码.
 
-## 公钥派生
+## 公钥派生 {#public-key-derivation}
 
 Nostr 的公钥从私钥中产生, 这个过程也称为「{派生|Derivation}」, 描述了私钥对于公钥的关系.
 
@@ -245,7 +245,7 @@ Nostr 的公钥从私钥中产生, 这个过程也称为「{派生|Derivation}�
 本节涉及私钥部分则仅使用 ncryptsec 私钥进行操作
 :::
 
-### 十六进制
+### 十六进制 {#hex-public-key}
 
 通常来说, 十六进制的公钥是很不常用的, 因为私钥签署的每一个事件都会包含 pubkey 字段, 其中就是私钥派生的公钥. 不过为了以防不时之需, 我们还是能直接用私钥生成公钥.
 
@@ -257,7 +257,7 @@ type the password to decrypt your secret key: ****
 xxxxx
 ```
 
-### npub
+### npub {#npub-public-key}
 
 使用 nak 从 ncryptsec 私钥派生公钥并编码为 npub:
 
@@ -267,7 +267,7 @@ type the password to decrypt your secret key: ****
 npub1xxxxx
 ```
 
-### nprofile
+### nprofile {#nprofile-public-key}
 
 **使用十六进制公钥**, 嵌入中继信息再编码为 nprofile:
 
@@ -283,7 +283,7 @@ nprofile1xxxxx
 nprofile1xxxxx
 ```
 
-## 实用工具
+## 实用工具 {#utilities}
 
 - **在浏览器内随时操作 NIP-19 编码的浏览器扩展**: [TsukemonoGit/nake](https://github.com/TsukemonoGit/nake) (GitHub)
 - **Nostr 公钥挖掘**: [grunch/rana](https://github.com/grunch/rana)
