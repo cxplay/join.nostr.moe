@@ -94,6 +94,12 @@ export default defineConfig({
         ]
       },
       {
+        text: '高级教程',
+        items: [
+          { text: '高级密钥生成指南', link: '/start/become-hacker/'}
+        ]
+      },
+      {
         text: '理论概念',
         items: [
           { text: '为什么是 Nostr?', link: '/start/why-nostr/' }
