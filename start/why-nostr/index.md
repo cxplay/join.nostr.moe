@@ -240,6 +240,7 @@ $ websocat wss://relay.nostr.moe
   "pubkey": "3b70689a51122b4f58f63593b1be3d7fd72bc00fae973bb40f2fb74dc1e351eb",
   "created_at": 1745424898,
   "kind": 1
+}
 ```
 
 这是笔者最近发送的一条阅读记录.
