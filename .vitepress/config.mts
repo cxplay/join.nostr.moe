@@ -96,7 +96,8 @@ export default defineConfig({
       {
         text: '高级教程',
         items: [
-          { text: '高级密钥生成指南', link: '/start/become-hacker/'}
+          { text: '高级密钥生成指南', link: '/start/become-hacker/'},
+          { text: '设置域名身份标识', link: '/start/become-hacker/domain-identity/'}
         ]
       },
       {
