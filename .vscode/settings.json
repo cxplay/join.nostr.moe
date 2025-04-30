@@ -1,4 +1,4 @@
 {
-  "markdown-image.local.path": "./assets",
+  "markdown-image.local.path": "./.assets",
   "markdown-image.base.fileNameFormat": "${mdname}/IMG_${YY}${MM}${DD}-${HH}${mm}${ss}${mss}",
 }
