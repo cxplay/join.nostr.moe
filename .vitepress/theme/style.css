@@ -113,3 +113,7 @@ img[src='/search.png'] {
     overflow: auto;
   }
 }
+
+.vp-doc img {
+  margin: 0 auto;
+}
