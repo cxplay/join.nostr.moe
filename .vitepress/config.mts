@@ -98,6 +98,7 @@ export default defineConfig({
         items: [
           { text: '高级密钥生成指南', link: '/start/become-hacker/'},
           { text: '设置域名身份标识', link: '/start/become-hacker/domain-identity/'},
+          { text: '手动管理元数据', link: '/start/become-hacker/manually-managing-metadata/'},
           { text: 'Android 密钥管理', link: '/start/become-hacker/android-key-management/'}
         ]
       },
