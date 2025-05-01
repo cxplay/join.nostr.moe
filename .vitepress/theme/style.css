@@ -99,6 +99,10 @@ img[src='/search.png'] {
   overflow: auto;
 }
 
+.vp-doc div[class*='language-'] {
+  overflow: hidden;
+}
+
 @media (hover: none) and (pointer: coarse) {
   .vp-doc table {
     overflow: auto;
