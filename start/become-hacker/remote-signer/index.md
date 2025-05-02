@@ -118,7 +118,7 @@ NIP-46 描述了客户端和服务端的要求, 但是没有对协调通讯的�
 
 strfry 配置:
 
-```conf
+```txt
 ##
 ## Default strfry config
 ##
@@ -148,10 +148,10 @@ events {
     rejectEventsOlderThanSeconds = 60
 
     # Ephemeral events older than this will be rejected
-    rejectEphemeralEventsOlderThanSeconds = 3
+    rejectEphemeralEventsOlderThanSeconds = 5
 
     # Ephemeral events will be deleted from the DB when older than this
-    ephemeralEventsLifetimeSeconds = 5
+    ephemeralEventsLifetimeSeconds = 10
 
     # Maximum number of tags allowed
     maxNumTags = 2000
@@ -209,10 +209,10 @@ relay {
     queryTimesliceBudgetMicroseconds = 10000
 
     # Maximum records that can be returned per filter
-    maxFilterLimit = 500
+    maxFilterLimit = 50
 
     # Maximum number of subscriptions (concurrent REQs) a connection can have open at any time
-    maxSubsPerConnection = 20
+    maxSubsPerConnection = 500
 
     writePolicy {
         # If non-empty, path to an executable script that implements the writePolicy plugin logic
@@ -260,7 +260,7 @@ relay {
 
     negentropy {
         # Support negentropy protocol messages
-        enabled = true
+        enabled = false
 
         # Maximum records that sync will process before returning an error
         maxSyncEvents = 1000000
