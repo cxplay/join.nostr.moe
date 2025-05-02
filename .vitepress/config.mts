@@ -75,9 +75,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     siteTitle: 'Nostr!moe',
-    logo: "./logo-mini.svg",
+    logo: "/logo-mini.svg",
     nav: [
-      { text: '主页', link: '/' },
+      { text: '开始', link: '/start/' },
       { text: '客户端',
         items: [
           { text: '常规版', link: 'https://nostr.moe/'},
