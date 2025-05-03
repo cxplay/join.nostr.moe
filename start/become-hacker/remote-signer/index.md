@@ -102,7 +102,7 @@ nostrconnect://xxxxx?relay=wss://shadow.relay.stream&secret=xyzclient&perms=nip4
 
 影子中继本应该只是一些普通的 Nostr 中继就能承担的角色, 但由于其实践中的特殊性, 本站认为有必要将其单独约束为一类中继. 因为影子中继相比普通中继:
 
-1. 完全不能保留过时的 `kind:24133` 事件, 因此需要比临时事件更加强调即时删除.
+1. 不能保留过时的 `kind:24133` 事件, 因此需要比临时事件更加强调即时删除, 比如在实践中一般最多保留十秒[^1].
 2. 更高的速率限制和并发限制, 以满足签名器长时间打开 WebSocket 连接并保持事件订阅.
 3. 延迟敏感, 需要确保 `kind:24133` 事件在中继中判断过期之前就将消息传递到服务端或者客户端.
 
@@ -328,3 +328,7 @@ rl.on('line', (line) => {
 > <https://noauth.nostr.moe>
 
 掩体服务端需要用户直接提供私钥以供后端签名器计算, 对于不想在 Android 设备上将琥珀作为掩体服务器使用的社区成员来说, 可以酌情选择更加便利的托管版本掩体服务器.
+
+## 注释
+
+[^1]: [https://nostr.moe/notes/~](https://nostr.moe/notes/nevent1qqsgyqph0ul4ewequmap0fh8r2enr37qktm9k3gs9ver9yp6lk5ky7gpzemhxue69uhhyetvv9ujumn0wd68ytnzv9hxgq3qxdtducdnjerex88gkg2qk2atsdlqsyxqaag4h05jmcpyspqt30wspe9lc5)
