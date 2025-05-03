@@ -68,11 +68,11 @@ nostrconnect://xxxxx?relay=wss://shadow.relay.stream&secret=xyzclient&perms=nip4
 
 打开琥珀, 进入设置,「中继」,「活动中继」设置:
 
-![进入琥珀的中继设置](../android-key-management/.assets/index/IMG_20250430-161008892.webp)
+![进入琥珀的中继设置](../android-key-management/.assets/IMG_20250430-161008892.webp)
 
 点击右下角的齿轮图标也就是活动中继设置, 将 Nostr!moe 社区的掩体中继 `wss://shadow.relay.stream` 添加到中继列表, 返回中继.
 
-![添加专用中继](.assets/index/IMG_20250501-141714756.webp)
+![添加专用中继](.assets/IMG_20250501-141714756.webp)
 
 ::: tip
 由于掩体中继可能需要承载客户端和服务端之间非常高频的 `kind:24133` 事件交换, 所以普通的保存用户内容的中继的速率限制有时会无法满足这一用途, 并且 `kind:24133` 事件需要被即时删除不能被超时保存.
@@ -84,15 +84,15 @@ nostrconnect://xxxxx?relay=wss://shadow.relay.stream&secret=xyzclient&perms=nip4
 
 回到琥珀的主界面, 也就是底栏第一个图标. 点击右下角的加号按钮, 选择「添加 nsecBunker」:
 
-![开始添加掩体](.assets/index/IMG_20250501-143027057.webp)
+![开始添加掩体](.assets/IMG_20250501-143027057.webp)
 
 随意输入这个掩体要使用的地方, 比如登录 Nostr!moe 的社区应用填写为 "nostr.moe", 下方会自动添加琥珀内预设的掩体中继, 当然你也能添加你想要的其他掩体中继. 点击创建, 然后就能获得琥珀生成的掩体链接:
 
-![创建掩体](.assets/index/IMG_20250501-143643406.webp)
+![创建掩体](.assets/IMG_20250501-143643406.webp)
 
 复制这个掩体链接, 前往 Nostr!moe 社区, 使用它进行登录. 这里使用常规版客户端演示:
 
-<video src=".assets/index/2025-05-01_221608.mp4" controls="controls" title="使用掩体链接登录 Nostr!moe">使用掩体链接登录 Nostr!moe</video>
+<video src=".assets/2025-05-01_221608.mp4" controls="controls" title="使用掩体链接登录 Nostr!moe">使用掩体链接登录 Nostr!moe</video>
 
 在与中继连接无碍的情况下, 客户端授权请求将会在数秒钟之内到达琥珀中被要求处理. 到此已经完成了一次通过掩体链接登录 Nostr 应用的操作了, 如果还需要登录更多的 Nostr 应用, 只要它支持使用掩体登录, 那么就能通过琥珀创建掩体链接进行授权登录.
 

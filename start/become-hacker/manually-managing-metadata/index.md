@@ -212,7 +212,7 @@ publishing to wss://relay.mostr.pub... failed: msg: blocked: failed to lookup ni
 
 这个机器人的用户资料现在将更新为如下:
 
-![蓝点网资讯机器人用户资料](.assets/index/IMG_20250430-211528815.webp)  
+![蓝点网资讯机器人用户资料](.assets/IMG_20250430-211528815.webp)  
 
 ## 信箱列表元数据 {#mailbox-list-metadata}
 
@@ -307,7 +307,7 @@ echo '{"kind":10002,"id":"e4b2e838a699521ff386e4d07ea2cee465a3d95b5564865b793ce1
 
 现在, 这个机器人的信箱中继列表将更新为如下:
 
-![蓝点网资讯机器人的中继列表](.assets/index/IMG_20250430-211807882.webp)  
+![蓝点网资讯机器人的中继列表](.assets/IMG_20250430-211807882.webp)  
 
 ## 常用大型中继 {#generic-relays}
 
