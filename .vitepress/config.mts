@@ -107,7 +107,8 @@ export default defineConfig({
       {
         text: '理论概念',
         items: [
-          { text: '为什么是 Nostr?', link: '/start/why-nostr/' }
+          { text: '为什么是 Nostr?', link: '/start/why-nostr/' },
+          { text: '抗审查的 Nostr 如何抗击滥用?', link: '/start/why-nostr/anti-abuse-and-anti-censorship/' }
         ]
       }
     ],
