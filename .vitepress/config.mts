@@ -120,7 +120,7 @@ export default defineConfig({
       options: searchOptions()
     },
     footer: {
-      message: '本站文字内容未经特殊声明均使用 CC 许可授权',
+      message: '<a href="https://status.nostr.moe" target="_blank">运行状态</a>',
       copyright: 'Nostr!moe © CC BY-NC-SA 4.0'
     },
     langMenuLabel: '多语言',
