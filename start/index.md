@@ -149,7 +149,7 @@ aside: true
 
 1. `wss://relay.damus.io/`
 2. `wss://relay.nostr.band/`
-3. `wss://nostr-relay.app/`
+3. `wss://nostr.mom/`
 4. `wss://nos.lol/`
 5. `wss://purplerelay.com/`
 
