@@ -77,41 +77,64 @@ export default defineConfig({
     siteTitle: 'Nostr!moe',
     logo: "/logo-mini.svg",
     nav: [
-      { text: '开始', link: '/start/' },
-      { text: '客户端',
+      {
+        text: '开始',
+        link: '/start/',
+        activeMatch: '/start/'
+      },
+      {
+        text: '资源',
+        link: '/resources/community-infrastructure/',
+        activeMatch: '/resources/'
+      },
+      {
+        text: '客户端',
         items: [
           { text: '常规版', link: 'https://nostr.moe/'},
           { text: '专业版', link: 'https://pro.nostr.moe/'}
         ]
       }
     ],
-    sidebar: [
-      {
-        text: '新手教程',
+    sidebar: {
+      '/start/': {
+        base: '/start/',
         items: [
-          { text: '快速加入 Nostr 网络', link: '/start/' },
-          { text: '申请加入 Nostr!moe 社区', link: '/start/apply/' }
+          {
+            text: '新手教程',
+            items: [
+              { text: '快速加入 Nostr 网络', link: '/' },
+              { text: '申请加入 Nostr!moe 社区', link: 'apply/' }
+            ]
+          },
+          {
+            text: '高级教程',
+            items: [
+              { text: '高级密钥生成指南', link: 'become-hacker/'},
+              { text: '设置域名身份标识', link: 'become-hacker/domain-identity/'},
+              { text: '手动管理元数据', link: 'become-hacker/manually-managing-metadata/'},
+              { text: 'Android 密钥管理', link: 'become-hacker/android-key-management/'},
+              { text: '使用远程签名器', link: 'become-hacker/remote-signer/'},
+              { text: '从 Android 设备上接收通知', link: 'become-hacker/receive-notifications-on-android-devices/'}
+            ]
+          },
+          {
+            text: '理论概念',
+            items: [
+              { text: '为什么是 Nostr?', link: 'why-nostr/' },
+              { text: '抗审查的 Nostr 如何抗击滥用?', link: 'why-nostr/anti-abuse-and-anti-censorship/' }
+            ]
+          }
         ]
       },
-      {
-        text: '高级教程',
+      '/resources/': {
+        base: '/resources/',
         items: [
-          { text: '高级密钥生成指南', link: '/start/become-hacker/'},
-          { text: '设置域名身份标识', link: '/start/become-hacker/domain-identity/'},
-          { text: '手动管理元数据', link: '/start/become-hacker/manually-managing-metadata/'},
-          { text: 'Android 密钥管理', link: '/start/become-hacker/android-key-management/'},
-          { text: '使用远程签名器', link: '/start/become-hacker/remote-signer/'},
-          { text: '从 Android 设备上接收通知', link: '/start/become-hacker/receive-notifications-on-android-devices/'}
-        ]
-      },
-      {
-        text: '理论概念',
-        items: [
-          { text: '为什么是 Nostr?', link: '/start/why-nostr/' },
-          { text: '抗审查的 Nostr 如何抗击滥用?', link: '/start/why-nostr/anti-abuse-and-anti-censorship/' }
+            {
+              text: '社区设施', link: 'community-infrastructure/'
+            }
         ]
       }
-    ],
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/cxplay/join.nostr.moe' }
     ],
