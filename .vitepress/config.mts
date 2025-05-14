@@ -103,7 +103,8 @@ export default defineConfig({
             text: '新手教程',
             items: [
               { text: '快速加入 Nostr 网络', link: '/' },
-              { text: '申请加入 Nostr!moe 社区', link: 'apply/' }
+              { text: '申请加入 Nostr!moe 社区', link: 'apply/' },
+              { text: '常用操作', link: 'common-operations/'}
             ]
           },
           {
