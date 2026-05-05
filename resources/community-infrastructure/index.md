@@ -3,7 +3,7 @@ description: Nostr!moe 社区为社区成员提供的 Nostr 相关设施一览.
 editLink: true
 layout: doc
 navbar: true
-sidebar: false
+sidebar: true
 aside: true
 ---
 

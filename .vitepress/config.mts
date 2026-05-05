@@ -131,7 +131,11 @@ export default defineConfig({
         base: '/resources/',
         items: [
             {
-              text: '社区设施', link: 'community-infrastructure/'
+              text: '资源',
+              items: [
+                { text: '社区设施', link: 'community-infrastructure/' },
+                { text: '名人堂', link: 'hall-of-fame/'}
+              ]
             }
         ]
       }
