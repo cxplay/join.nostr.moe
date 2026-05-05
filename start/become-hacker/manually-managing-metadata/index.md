@@ -311,7 +311,7 @@ echo '{"kind":10002,"id":"e4b2e838a699521ff386e4d07ea2cee465a3d95b5564865b793ce1
 
 ## 常用大型中继 {#generic-relays}
 
-> 全球 Nostr 中继图谱: [next.nostr.watch](https://next.nostr.watch/)
+> 全球 Nostr 中继图谱: [nostr.watch](https://nostr.watch/)
 
 ::: tip
 不要过分追求「完全」覆盖, 在分布式网络中这是没有必要的, 并且也是不可能完成的任务.
